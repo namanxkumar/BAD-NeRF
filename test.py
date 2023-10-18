@@ -13,6 +13,7 @@ import novel_view_test
 def test():
     parser = config_parser()
     args = parser.parse_args()
+    print(args.N_novel_view)
     print('spline numbers: ', args.deblur_images)
 
     imgs_sharp_dir = os.path.join(args.datadir, 'images_test')
